@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -51,6 +54,12 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				'section-bg': 'hsl(var(--section-bg))',
+				orange: {
+					400: 'hsl(31 100% 65%)',
+					500: 'hsl(24 95% 53%)',
+					600: 'hsl(20 91% 48%)',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
