@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 220 13% 18%;
 
-    --primary: 24 95% 53%;
+    --primary: 199 89% 48%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 220 14% 96%;
@@ -26,13 +26,13 @@ All colors MUST be HSL.
     --muted: 220 14% 96%;
     --muted-foreground: 220 8.9% 46.1%;
 
-    --accent: 24 95% 53%;
+    --accent: 199 89% 48%;
     --accent-foreground: 0 0% 98%;
 
     /* Custom portfolio colors */
-    --orange-gradient: linear-gradient(135deg, 24 95% 53%, 31 100% 65%);
+    --sky-gradient: linear-gradient(135deg, 199 89% 48%, 200 98% 39%);
     --section-bg: 220 14% 98%;
-    --skill-bg: 24 95% 53%;
+    --skill-bg: 199 89% 48%;
     --skill-text: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
@@ -71,7 +71,7 @@ All colors MUST be HSL.
     --popover: 220 13% 12%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 24 95% 53%;
+    --primary: 199 89% 48%;
     --primary-foreground: 0 0% 9%;
 
     --secondary: 220 13% 14%;
@@ -80,12 +80,12 @@ All colors MUST be HSL.
     --muted: 220 13% 14%;
     --muted-foreground: 220 5% 65%;
 
-    --accent: 24 95% 53%;
+    --accent: 199 89% 48%;
     --accent-foreground: 0 0% 9%;
 
     /* Dark mode custom colors */
     --section-bg: 220 13% 11%;
-    --skill-bg: 24 95% 53%;
+    --skill-bg: 199 89% 48%;
     --skill-text: 0 0% 9%;
 
     --destructive: 0 62.8% 30.6%;
@@ -121,7 +121,7 @@ All colors MUST be HSL.
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary to-sky-400 bg-clip-text text-transparent;
   }
   
   .section-padding {

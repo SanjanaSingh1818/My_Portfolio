@@ -91,7 +91,7 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Profile Image Placeholder */}
+          {/* Profile Image */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -99,9 +99,14 @@ const Hero = () => {
             className="hidden lg:flex justify-center"
           >
             <div className="relative">
-              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary to-orange-400 p-2">
-                <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
-                  <div className="text-6xl font-bold gradient-text">SS</div>
+              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary to-sky-400 p-2">
+                <div className="w-full h-full rounded-full overflow-hidden">
+                  <img
+                    src="/lovable-uploads/bb5ae41b-813a-413c-b737-b13162288d8d.png"
+                    alt="Sanjana Singh - MERN Stack Developer"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
               </div>
               {/* Floating Elements */}
@@ -115,7 +120,7 @@ const Hero = () => {
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 2.5, repeat: Infinity }}
-                className="absolute -bottom-4 -left-4 w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center"
+                className="absolute -bottom-4 -left-4 w-12 h-12 bg-sky-500 rounded-lg flex items-center justify-center"
               >
                 <span className="text-white font-bold">⚛️</span>
               </motion.div>

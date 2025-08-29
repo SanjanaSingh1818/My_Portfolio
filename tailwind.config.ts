@@ -56,10 +56,10 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				'section-bg': 'hsl(var(--section-bg))',
-				orange: {
-					400: 'hsl(31 100% 65%)',
-					500: 'hsl(24 95% 53%)',
-					600: 'hsl(20 91% 48%)',
+				sky: {
+					400: 'hsl(200 98% 39%)',
+					500: 'hsl(199 89% 48%)',
+					600: 'hsl(198 93% 60%)',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

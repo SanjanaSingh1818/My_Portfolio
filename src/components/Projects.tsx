@@ -66,7 +66,7 @@ const Projects = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -77,20 +77,19 @@ const Projects = () => {
             >
               <Card className="h-full group hover:shadow-xl transition-all duration-300 border-2 hover:border-primary/20">
                 <CardHeader className="pb-4">
-                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-orange-400/10 rounded-lg mb-4 flex items-center justify-center">
+                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-sky-400/10 rounded-lg mb-4 flex items-center justify-center">
                     <div className="text-4xl font-bold gradient-text">
                       {project.title.charAt(0)}
                     </div>
                   </div>
-                  <CardTitle className="group-hover:text-primary transition-colors">
+                  <CardTitle className="group-hover:text-primary transition-colors text-lg">
                     {project.title}
                   </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {project.description}
                   </p>
-                  
+                </CardHeader>
+                <CardContent className="space-y-4">
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
                       <Badge key={tag} variant="secondary" className="text-xs">
@@ -99,17 +98,17 @@ const Projects = () => {
                     ))}
                   </div>
                   
-                  <div className="flex space-x-3 pt-4">
+                  <div className="flex space-x-3">
                     {project.liveUrl !== '#' && (
                       <Button size="sm" className="flex-1">
                         <a 
                           href={project.liveUrl} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="flex items-center space-x-2"
+                          className="flex items-center justify-center space-x-2 w-full"
                         >
                           <ExternalLink className="w-4 h-4" />
-                          <span>Live Demo</span>
+                          <span>Live</span>
                         </a>
                       </Button>
                     )}
@@ -119,10 +118,10 @@ const Projects = () => {
                           href={project.githubUrl} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="flex items-center space-x-2"
+                          className="flex items-center justify-center space-x-2 w-full"
                         >
                           <Github className="w-4 h-4" />
-                          <span>Code</span>
+                          <span>GitHub</span>
                         </a>
                       </Button>
                     )}

@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Menu, X, Download } from 'lucide-react';
+import { Menu, X, Download, Sun, Moon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useDarkMode } from '@/hooks/useDarkMode';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   const navItems = [
     { name: 'Home', href: '#home' },
@@ -51,8 +53,16 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Resume Button & Mobile Menu */}
+          {/* Dark Mode & Resume Button & Mobile Menu */}
           <div className="flex items-center space-x-4">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={toggleDarkMode}
+              className="p-2"
+            >
+              {isDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+            </Button>
             <Button
               onClick={handleResumeDownload}
               className="hidden sm:flex items-center space-x-2"
