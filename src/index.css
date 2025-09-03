@@ -8,32 +8,32 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 98%;
-    --foreground: 220 13% 18%;
+    /* Light Mode - Clean, Minimal */
+    --background: 210 20% 98%; /* #F9FAFB */
+    --foreground: 220 26% 14%; /* #111827 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 13% 18%;
+    --card: 0 0% 100%; /* #FFFFFF */
+    --card-foreground: 220 26% 14%; /* #111827 */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 13% 18%;
+    --popover-foreground: 220 26% 14%;
 
-    --primary: 199 89% 48%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 178 100% 29%; /* #14B8A6 - Teal */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 220 13% 18%;
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 220 26% 14%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 8.9% 46.1%;
+    --muted: 220 13% 91%;
+    --muted-foreground: 220 9% 46%; /* #6B7280 */
 
-    --accent: 199 89% 48%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 221 83% 53%; /* #2563EB - Bright Blue */
+    --accent-foreground: 0 0% 100%;
 
-    /* Custom portfolio colors */
-    --sky-gradient: linear-gradient(135deg, 199 89% 48%, 200 98% 39%);
-    --section-bg: 220 14% 98%;
-    --skill-bg: 199 89% 48%;
-    --skill-text: 0 0% 98%;
+    /* Custom techy theme colors */
+    --section-bg: 210 20% 98%;
+    --text-primary: 220 26% 14%;
+    --text-muted: 220 9% 46%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -62,31 +62,32 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 220 13% 9%;
-    --foreground: 0 0% 95%;
+    /* Dark Mode - Techy, Vibrant */
+    --background: 210 100% 6%; /* #0A192F - Deep Navy */
+    --foreground: 214 100% 92%; /* #E6F1FF - Soft White */
 
-    --card: 220 13% 12%;
-    --card-foreground: 0 0% 95%;
+    --card: 214 27% 15%; /* #112240 */
+    --card-foreground: 214 100% 92%; /* #E6F1FF */
 
-    --popover: 220 13% 12%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 214 27% 15%;
+    --popover-foreground: 214 100% 92%;
 
-    --primary: 199 89% 48%;
-    --primary-foreground: 0 0% 9%;
+    --primary: 170 100% 70%; /* #64FFDA - Cyan/Teal glow */
+    --primary-foreground: 210 100% 6%;
 
-    --secondary: 220 13% 14%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 214 27% 15%;
+    --secondary-foreground: 214 100% 92%;
 
-    --muted: 220 13% 14%;
-    --muted-foreground: 220 5% 65%;
+    --muted: 214 27% 15%;
+    --muted-foreground: 217 20% 60%; /* #8892B0 */
 
-    --accent: 199 89% 48%;
-    --accent-foreground: 0 0% 9%;
+    --accent: 199 89% 64%; /* #4FC3F7 - Electric Blue */
+    --accent-foreground: 210 100% 6%;
 
-    /* Dark mode custom colors */
-    --section-bg: 220 13% 11%;
-    --skill-bg: 199 89% 48%;
-    --skill-text: 0 0% 9%;
+    /* Dark mode techy colors */
+    --section-bg: 214 27% 15%;
+    --text-primary: 214 100% 92%;
+    --text-muted: 217 20% 60%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
