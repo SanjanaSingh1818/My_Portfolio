@@ -162,33 +162,35 @@ const Projects = () => {
                   </div>
                   
                   <div className="flex space-x-3">
-                    {project.liveUrl !== '#' && (
-                      <Button 
-                        size="sm" 
-                        className="flex-1"
-                        onClick={(e) => {
-                          e.stopPropagation();
+                    <Button 
+                      size="sm" 
+                      className="flex-1"
+                      disabled={project.liveUrl === '#'}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        if (project.liveUrl !== '#') {
                           window.open(project.liveUrl, '_blank');
-                        }}
-                      >
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        <span>Live</span>
-                      </Button>
-                    )}
-                    {project.githubUrl !== '#' && (
-                      <Button 
-                        variant="outline" 
-                        size="sm" 
-                        className="flex-1"
-                        onClick={(e) => {
-                          e.stopPropagation();
+                        }
+                      }}
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      <span>Live</span>
+                    </Button>
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="flex-1"
+                      disabled={project.githubUrl === '#'}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        if (project.githubUrl !== '#') {
                           window.open(project.githubUrl, '_blank');
-                        }}
-                      >
-                        <Github className="w-4 h-4 mr-2" />
-                        <span>GitHub</span>
-                      </Button>
-                    )}
+                        }
+                      }}
+                    >
+                      <Github className="w-4 h-4 mr-2" />
+                      <span>GitHub</span>
+                    </Button>
                   </div>
                 </CardContent>
               </Card>
