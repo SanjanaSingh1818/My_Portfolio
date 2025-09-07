@@ -35,9 +35,26 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="space-y-4"
+              className="space-y-4 relative"
             >
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+              {/* Mobile Profile Image - Small in corner */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.3, duration: 0.6 }}
+                className="lg:hidden absolute -top-4 right-0 w-20 h-20 rounded-full bg-gradient-to-br from-primary to-sky-400 p-1"
+              >
+                <div className="w-full h-full rounded-full overflow-hidden">
+                  <img
+                    src="/lovable-uploads/bb5ae41b-813a-413c-b737-b13162288d8d.png"
+                    alt="Sanjana Singh - MERN Stack Developer"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </motion.div>
+
+              <h1 className="text-4xl md:text-6xl font-bold leading-tight pr-24 lg:pr-0">
                 Hi, I'm{' '}
                 <span className="gradient-text">Sanjana Singh</span>
               </h1>
@@ -91,12 +108,12 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Profile Image */}
+          {/* Desktop Profile Image */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="flex justify-center mt-8 lg:mt-0"
+            className="hidden lg:flex justify-center"
           >
             <div className="relative">
               <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary to-sky-400 p-2">
