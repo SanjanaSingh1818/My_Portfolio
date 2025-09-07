@@ -96,7 +96,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="hidden lg:flex justify-center"
+            className="flex justify-center mt-8 lg:mt-0"
           >
             <div className="relative">
               <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary to-sky-400 p-2">
