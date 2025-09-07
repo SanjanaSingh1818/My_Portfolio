@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -5,7 +6,6 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Mail, Phone, Github, Linkedin, Code, ExternalLink } from 'lucide-react';
 import emailjs from '@emailjs/browser';
-import { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
@@ -61,6 +61,7 @@ const Contact = () => {
       setIsSubmitting(false);
     }
   };
+
   const contactInfo = [
     {
       icon: Mail,
