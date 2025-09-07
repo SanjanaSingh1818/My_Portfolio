@@ -118,32 +118,31 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
 
                   {/* Action Buttons */}
                   <div className="flex gap-4">
-                    {project.liveUrl !== '#' && (
-                      <Button asChild className="flex-1 bg-primary hover:bg-primary/90">
-                        <a 
-                          href={project.liveUrl} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="flex items-center justify-center gap-2"
-                        >
-                          <ExternalLink className="w-4 h-4" />
-                          View Live Project
-                        </a>
-                      </Button>
-                    )}
-                    {project.githubUrl !== '#' && (
-                      <Button variant="outline" asChild className="flex-1 border-primary/20 hover:bg-primary/10">
-                        <a 
-                          href={project.githubUrl} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="flex items-center justify-center gap-2"
-                        >
-                          <Github className="w-4 h-4" />
-                          View Source Code
-                        </a>
-                      </Button>
-                    )}
+                    <Button 
+                      className="flex-1 bg-[#64FFDA] text-[#0A192F] hover:bg-[#4FC3F7]"
+                      disabled={project.liveUrl === '#'}
+                      onClick={() => {
+                        if (project.liveUrl !== '#') {
+                          window.open(project.liveUrl, '_blank');
+                        }
+                      }}
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      View Live
+                    </Button>
+                    <Button 
+                      variant="outline" 
+                      className="flex-1 border-[#64FFDA] text-[#64FFDA] hover:bg-[#64FFDA]/10"
+                      disabled={project.githubUrl === '#'}
+                      onClick={() => {
+                        if (project.githubUrl !== '#') {
+                          window.open(project.githubUrl, '_blank');
+                        }
+                      }}
+                    >
+                      <Github className="w-4 h-4 mr-2" />
+                      Source Code
+                    </Button>
                   </div>
                 </div>
               </div>

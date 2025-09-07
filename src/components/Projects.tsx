@@ -140,10 +140,13 @@ const Projects = () => {
                 onClick={() => handleProjectClick(project)}
               >
                 <CardHeader className="pb-4">
-                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-sky-400/10 rounded-lg mb-4 flex items-center justify-center">
-                    <div className="text-4xl font-bold gradient-text">
-                      {project.title.charAt(0)}
-                    </div>
+                  <div className="aspect-video bg-gradient-to-br from-[#64FFDA]/10 to-[#4FC3F7]/10 rounded-lg mb-4 overflow-hidden">
+                    <img 
+                      src={project.image || '/placeholder.svg'}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
                   </div>
                   <CardTitle className="group-hover:text-primary transition-colors text-lg">
                     {project.title}

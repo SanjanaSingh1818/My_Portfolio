@@ -18,8 +18,13 @@ const Header = () => {
   ];
 
   const handleResumeDownload = () => {
-    // This would typically link to your actual resume file
-    window.open('#', '_blank');
+    const link = document.createElement('a');
+    link.href = '/resume.pdf';
+    link.target = '_blank';
+    link.download = 'resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
