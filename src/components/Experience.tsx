@@ -8,7 +8,7 @@ const Experience = () => {
     {
       title: 'Associate Web Developer',
       company: 'Genesis Virtue',
-      period: '2024 - Present',
+      period: 'March 2025 - Present',
       type: 'Full-time',
       bullets: [
         'Developed responsive web applications using React.js and modern JavaScript frameworks',
@@ -20,7 +20,7 @@ const Experience = () => {
     {
       title: 'Subject Matter Expert',
       company: 'Chegg',
-      period: '2023 - Present',
+      period: 'March 2023 - December 2024',
       type: 'Part-time',
       bullets: [
         'Provided expert solutions for 200+ computer science and programming questions',
@@ -29,34 +29,11 @@ const Experience = () => {
       ],
       technologies: ['Problem Solving', 'Algorithm Design', 'Code Review'],
     },
-    {
-      title: 'Web Development Intern',
-      company: 'TechnoHacks',
-      period: '2023',
-      type: 'Internship',
-      bullets: [
-        'Built 3+ responsive web applications using HTML, CSS, JavaScript and React',
-        'Collaborated with design team to implement pixel-perfect UI components',
-        'Improved application performance by 25% through code optimization'
-      ],
-      technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
-    },
-    {
-      title: 'Web Development Intern',
-      company: 'OctaNet',
-      period: '2023',
-      type: 'Internship',
-      bullets: [
-        'Developed frontend components for 2+ client projects using modern web technologies',
-        'Implemented responsive design principles ensuring mobile-first approach',
-        'Participated in code reviews and learned industry best practices'
-      ],
-      technologies: ['Frontend Development', 'UI/UX', 'Responsive Design'],
-    },
+
     {
       title: 'Technical Intern',
       company: 'Northern Railway',
-      period: '2022',
+      period: 'June 2024 - July 2024',
       type: 'Internship',
       bullets: [
         'Analyzed large-scale railway management systems and documented technical workflows',
@@ -64,6 +41,19 @@ const Experience = () => {
         'Gained exposure to enterprise-level development and maintenance practices'
       ],
       technologies: ['System Analysis', 'Documentation', 'Testing'],
+    },
+    
+       {
+      title: 'Web Development Intern',
+      company: 'TechnoHacks',
+      period: 'June 2023 - July 2023',
+      type: 'Internship',
+      bullets: [
+        'Built 3+ responsive web applications using HTML, CSS, JavaScript and React',
+        'Collaborated with design team to implement pixel-perfect UI components',
+        'Improved application performance by 25% through code optimization'
+      ],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
     },
   ];
 

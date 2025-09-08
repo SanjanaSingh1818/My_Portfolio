@@ -31,23 +31,23 @@ const Contact = () => {
 
     try {
       // Initialize EmailJS with your public key
-      emailjs.init('YOUR_PUBLIC_KEY'); // Replace with your actual public key
+      emailjs.init('QR-OWqHYKnaIPmBj8'); // Replace with your actual public key
       
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your service ID
-        'YOUR_TEMPLATE_ID', // Replace with your template ID
+         import.meta.env.VITE_SERVICE_ID, 
+        import.meta.env.VITE_TEMPLATE_ID, 
         {
           from_name: formData.name,
-          from_email: formData.email,
+          email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
-        'YOUR_PUBLIC_KEY' // Replace with your actual public key
+        import.meta.env.VITE_PUBLIC_KEY 
       );
 
       toast({
         title: "Message sent successfully!",
-        description: "I'll get back to you as soon as possible.",
+        
       });
 
       setFormData({ name: '', email: '', subject: '', message: '' });

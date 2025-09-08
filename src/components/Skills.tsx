@@ -10,24 +10,34 @@ const Skills = () => {
     },
     {
       title: 'Frontend Technologies',
-      skills: ['React.js', 'Redux', 'Tailwind CSS', 'HTML5', 'CSS3'],
+      skills: ['React.js', 'Redux', 'Tailwind CSS', 'HTML5', 'CSS3', 'GSAP Animation', 'Material-UI (MUI)', 'ShadCN UI'],
       color: 'bg-green-500',
     },
     {
       title: 'Backend Technologies',
-      skills: ['Node.js', 'Express.js', 'MongoDB', 'RESTful APIs'],
+      skills: ['Node.js', 'Express.js', 'MongoDB', 'RESTful APIs'] ,
       color: 'bg-purple-500',
     },
     {
-      title: 'Tools & Platforms',
-      skills: ['Git', 'GitHub', 'Appwrite', 'Cloudinary', 'Vercel'],
-      color: 'bg-orange-500',
-    },
-    {
-      title: 'Other Skills',
-      skills: ['Problem Solving', 'Algorithm Design', 'System Design', 'UI/UX Design'],
+      title: 'CMS & No-Code Platforms',
+      skills: ['WordPress', 'Shopify'],
       color: 'bg-pink-500',
     },
+    {
+      title: 'DevOps & Deployment',
+      skills: ['Git', 'GitHub Actions', 'Appwrite', 'Cloudinary', 'Vercel', 'Netlify'],
+      color: 'bg-yellow-500',
+    },
+ {
+  title: 'Testing & API Tools',
+  skills: ['Postman', 'Swagger', 'Jest', 'React Testing Library'],
+  color: 'bg-teal-500',
+},
+{      title: 'Soft & Additional Skills',
+      skills: ['Agile / Scrum Methodology', 'SEO Optimization ', 'Problem Solving', 'Effective Communication'],
+      color: 'bg-red-500',
+    },
+
   ];
 
   return (

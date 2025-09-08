@@ -46,7 +46,7 @@ const Hero = () => {
               >
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img
-                    src="/lovable-uploads/bb5ae41b-813a-413c-b737-b13162288d8d.png"
+                    src="/uploads/profile.png"
                     alt="Sanjana Singh - MERN Stack Developer"
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -119,7 +119,7 @@ const Hero = () => {
               <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary to-sky-400 p-2">
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img
-                    src="/lovable-uploads/bb5ae41b-813a-413c-b737-b13162288d8d.png"
+                    src="/uploads/profile.png"
                     alt="Sanjana Singh - MERN Stack Developer"
                     className="w-full h-full object-cover"
                     loading="lazy"

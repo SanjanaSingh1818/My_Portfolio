@@ -36,7 +36,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
             className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50"
             onClick={onClose}
           />
-          
+
           {/* Modal */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8, y: 50 }}
@@ -58,11 +58,13 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
             {/* Content */}
             <div className="h-full overflow-y-auto">
               <div className="relative">
-                {/* Hero Section */}
-                <div className="relative h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <div className="text-6xl font-bold text-primary/60">
-                    {project.title.charAt(0)}
-                  </div>
+                {/* Hero Section with Image */}
+                <div className="relative h-56 md:h-72 bg-gray-100 dark:bg-gray-800 flex items-center justify-center overflow-hidden">
+                  <img
+                    src={project.image || '/placeholder.svg'}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 {/* Project Info */}
@@ -109,7 +111,11 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                     </h3>
                     <div className="flex flex-wrap gap-2">
                       {project.tags.map((tag) => (
-                        <Badge key={tag} variant="secondary" className="bg-primary/10 text-primary border-primary/20">
+                        <Badge
+                          key={tag}
+                          variant="secondary"
+                          className="bg-primary/10 text-primary border-primary/20"
+                        >
                           {tag}
                         </Badge>
                       ))}
@@ -118,7 +124,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
 
                   {/* Action Buttons */}
                   <div className="flex gap-4">
-                    <Button 
+                    <Button
                       className="flex-1 bg-[#64FFDA] text-[#0A192F] hover:bg-[#4FC3F7]"
                       disabled={project.liveUrl === '#'}
                       onClick={() => {
@@ -130,8 +136,8 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                       <ExternalLink className="w-4 h-4 mr-2" />
                       View Live
                     </Button>
-                    <Button 
-                      variant="outline" 
+                    <Button
+                      variant="outline"
                       className="flex-1 border-[#64FFDA] text-[#64FFDA] hover:bg-[#64FFDA]/10"
                       disabled={project.githubUrl === '#'}
                       onClick={() => {

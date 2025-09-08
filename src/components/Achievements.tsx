@@ -119,7 +119,16 @@ const Achievements = () => {
             <div className="space-y-2">
               <div className="text-3xl font-bold text-primary">250+</div>
               <div className="text-muted-foreground">GeeksforGeeks Problems</div>
-              <div className="text-sm text-muted-foreground">Algorithm & Data Structures</div>
+               <div className="text-sm text-muted-foreground">
+                  <a 
+                  href="https://www.geeksforgeeks.org/user/sanjanasingh18/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors underline"
+                >
+                  View Profile
+                </a>
+              </div>
             </div>
             <div className="space-y-2">
               <div className="text-3xl font-bold text-primary">400+</div>

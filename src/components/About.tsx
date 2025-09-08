@@ -11,8 +11,8 @@ const About = () => {
     },
     {
       icon: GraduationCap,
-      title: 'Final Year Student',
-      description: 'B.Tech CSIT, MJPRU - 2025',
+      title: 'B.Tech Graduate',
+      description: 'B.Tech CSIT, MJPRU – 2025',
     },
     {
       icon: Trophy,
@@ -35,7 +35,7 @@ const About = () => {
             About <span className="gradient-text">Me</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Passionate developer with a drive to create meaningful digital experiences
+            Passionate Software Developer with a drive to create meaningful digital experiences
           </p>
         </motion.div>
 
@@ -51,22 +51,22 @@ const About = () => {
             <div className="prose prose-lg text-foreground/80">
               <p>
                 I'm <strong>Sanjana Singh</strong>, a passionate MERN Stack Developer and 
-                final-year B.Tech student (CSIT, MJPRU – 2025). Currently working as an 
-                Associate Web Developer at Genesis Virtue, I specialize in building responsive, 
-                scalable, and user-friendly web applications using React.js, Tailwind CSS, 
-                Node.js, and MongoDB.
+                B.Tech graduate in Computer Science & Information Technology (MJPRU – 2025). 
+                Currently working as an Associate Web Developer at Genesis Virtue, I specialize in 
+                building responsive, scalable, and user-friendly web applications using React.js, 
+                Tailwind CSS, Node.js, and MongoDB.
               </p>
               <p>
-                With hands-on experience in real-world client projects like Speedy Tyres 
-                (Sweden-based tire & car service website) and personal projects such as 
-                EduKnit (academic learning platform) and an AI Image Generator, I combine 
+                With hands-on experience in real-world client projects like <strong>Speedy Tyres</strong> 
+                (Sweden-based tire & car service website) and personal projects such as <strong>EduKnit</strong> 
+                (academic learning platform) and an <strong>AI Image Generator</strong>, I combine 
                 technical expertise with problem-solving skills to deliver impactful digital solutions.
               </p>
               <p>
-                Beyond development, I actively practice competitive programming, solving 150+ 
-                problems on LeetCode and 250+ on GeeksforGeeks, which strengthens my logical 
-                thinking and coding efficiency. I'm always eager to learn, adapt, and contribute 
-                to creating meaningful tech products that enhance user experiences.
+                Beyond development, I actively practice competitive programming, solving 
+                <strong> 150+ problems on LeetCode</strong> and <strong>250+ on GeeksforGeeks</strong>, 
+                which strengthens my logical thinking and coding efficiency. I'm always eager to learn, 
+                adapt, and contribute to creating meaningful tech products that enhance user experiences.
               </p>
             </div>
           </motion.div>
