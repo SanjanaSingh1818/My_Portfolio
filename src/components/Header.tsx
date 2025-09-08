@@ -19,9 +19,9 @@ const Header = () => {
 
   const handleResumeDownload = () => {
     const link = document.createElement('a');
-    link.href = '/resume.pdf';
+    link.href = '/Sanjana_Resume.pdf';
     link.target = '_blank';
-    link.download = 'resume.pdf';
+    link.download = 'Sanjana_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

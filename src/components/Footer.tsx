@@ -16,7 +16,7 @@ const Footer = () => {
             Sanjana Singh
           </div>
           <p className="text-muted-foreground">
-            MERN Stack Developer | Frontend Engineer
+            Software Developer | MERN Stack Developer 
           </p>
           <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground">
             <span>Made with</span>

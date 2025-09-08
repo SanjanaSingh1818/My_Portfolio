@@ -47,7 +47,7 @@ const Hero = () => {
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img
                     src="/uploads/profile.png"
-                    alt="Sanjana Singh - MERN Stack Developer"
+                    alt="Sanjana Singh - Software Developer"
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
@@ -59,10 +59,10 @@ const Hero = () => {
                 <span className="gradient-text">Sanjana Singh</span>
               </h1>
               <h2 className="text-xl md:text-2xl text-muted-foreground font-medium">
-                MERN Stack Developer | Frontend Engineer
+                Software Developer | MERN Stack Developer
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl">
-                Turning ideas into impactful digital solutions with modern web technologies
+                Turning ideas into impactful digital solutions with modern web technologies!
               </p>
             </motion.div>
 
@@ -120,7 +120,7 @@ const Hero = () => {
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img
                     src="/uploads/profile.png"
-                    alt="Sanjana Singh - MERN Stack Developer"
+                    alt="Sanjana Singh - Software Developer"
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />

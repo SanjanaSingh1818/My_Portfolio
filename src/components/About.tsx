@@ -6,8 +6,8 @@ const About = () => {
   const highlights = [
     {
       icon: Code2,
-      title: 'MERN Stack Developer',
-      description: 'Specialized in building scalable web applications',
+      title: 'Software Developer',
+      description: 'Specialized in building scalable web applications specialized in MERN Stack',
     },
     {
       icon: GraduationCap,
@@ -50,7 +50,7 @@ const About = () => {
           >
             <div className="prose prose-lg text-foreground/80">
               <p>
-                I'm <strong>Sanjana Singh</strong>, a passionate MERN Stack Developer and 
+                I'm <strong>Sanjana Singh</strong>, a passionate Software Developer and 
                 B.Tech graduate in Computer Science & Information Technology (MJPRU – 2025). 
                 Currently working as an Associate Web Developer at Genesis Virtue, I specialize in 
                 building responsive, scalable, and user-friendly web applications using React.js, 

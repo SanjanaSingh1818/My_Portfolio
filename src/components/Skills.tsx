@@ -10,13 +10,18 @@ const Skills = () => {
     },
     {
       title: 'Frontend Technologies',
-      skills: ['React.js', 'Redux', 'Tailwind CSS', 'HTML5', 'CSS3', 'GSAP Animation', 'Material-UI (MUI)', 'ShadCN UI'],
+      skills: ['React.js18', 'Redux', 'Tailwind CSS', 'HTML5', 'CSS3', 'GSAP Animation', 'Material-UI (MUI)', 'ShadCN UI'],
       color: 'bg-green-500',
     },
     {
       title: 'Backend Technologies',
-      skills: ['Node.js', 'Express.js', 'MongoDB', 'RESTful APIs'] ,
+      skills: ['Node.js', 'Express.js', 'Multer', 'JWT', 'Winston', 'Bcrypt', 'Helmet'],
       color: 'bg-purple-500',
+    },
+        {
+      title: 'Database & Infrastructure',
+      skills: ['MongoDB', 'Mongoose', 'Swagger/OpenAPI', 'Docker'],
+      color: 'bg-red-500',
     },
     {
       title: 'CMS & No-Code Platforms',
@@ -30,7 +35,7 @@ const Skills = () => {
     },
  {
   title: 'Testing & API Tools',
-  skills: ['Postman', 'Swagger', 'Jest', 'React Testing Library'],
+  skills: ['Postman', 'Swagger', 'Jest', 'React Testing Library',  'RESTful APIs'],
   color: 'bg-teal-500',
 },
 {      title: 'Soft & Additional Skills',
