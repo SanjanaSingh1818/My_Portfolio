@@ -27,13 +27,14 @@ My projects demonstrate my ability to develop both **frontend and backend** feat
 
 ## 🚀 Projects
 
-### 1. **Speedy Tyres**
-- Full-stack application for managing tyre services.
-- Features: Booking system, inventory management, and service tracking.
-
-### 2. **Turgomedia**
-- Media-based project showcasing content management and interactive design.
-- Features: Dynamic content display, responsive UI, and API integration.
+### 1. **EduKnit**
+- A full-stack learning platform for managing courses, programs, and student enrollments.  
+- Features:  
+  - Browse and enroll in programs/courses  
+  - Booking system for live classes or sessions  
+  - Dynamic course content and program details  
+  - Responsive and interactive UI for both desktop and mobile  
+  - Admin panel for managing courses, faculty, and users
 
 ### 3. **Dictionary App**
 - MERN stack app with **word lookup, bookmarking, and pronunciation features**.
