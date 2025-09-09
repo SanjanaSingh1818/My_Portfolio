@@ -55,20 +55,6 @@ My portfolio is designed as a **Progressive Web App (PWA)** offering:
 
 ---
 
-## 📂 Folder Structure
-my_portfolio/
-├─ public/ # Static files: images, icons, manifest.json
-├─ src/
-│ ├─ components/ # Reusable React components
-│ ├─ pages/ # Page-level components
-│ ├─ assets/ # Images, icons, and fonts
-│ └─ App.js # Main app component
-├─ package.json
-└─ README.md
-
-
----
-
 ## 🔗 Live Demo
 [View Live Portfolio](#) <!-- Replace # with actual link -->
 
