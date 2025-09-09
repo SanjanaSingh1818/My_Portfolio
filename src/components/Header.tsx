@@ -17,14 +17,10 @@ const Header = () => {
     { name: 'Contact', href: '#contact' },
   ];
 
+  // ✅ Use Google Drive link for resume
   const handleResumeDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/Sanjana_Resume.pdf';
-    link.target = '_blank';
-    link.download = 'Sanjana_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    const resumeLink = "https://drive.google.com/file/d/1vCUwWitgsOnAaUTKRCPupRP8BvS4Bez-/view?usp=sharing";
+    window.open(resumeLink, "_blank");
   };
 
   return (
