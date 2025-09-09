@@ -56,12 +56,12 @@ My portfolio is designed as a **Progressive Web App (PWA)** offering:
 ---
 
 ## 🔗 Live Demo
-[View Live Portfolio](#) <!-- Replace # with actual link -->
+[View Live Portfolio](https://my-portfolio-theta-six-77.vercel.app/) 
 
 ---
 
 ## 📫 Contact Me
-- **Email:** sanjanasingh@example.com <!-- Replace with your email -->
+- **Email:** sanjanasingh63072@gmail.com
 - **LinkedIn:** [Sanjana Singh](https://www.linkedin.com/in/sanjanasingh/)
 - **GitHub:** [SanjanaSingh1818](https://github.com/SanjanaSingh1818)
 
